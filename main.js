@@ -96,7 +96,7 @@ $('#userList').on('click', 'li', function () {
             openStream()
                 .then(stream => {
                     playStream('localStream', stream);
-                    const call = peer.call(id, stream);
+                    const call = peer.call($(this).attr('id'), stream);
                     call.on('stream', remoteStream => {
                         playStream('remoteStream', remoteStream)
                     });
