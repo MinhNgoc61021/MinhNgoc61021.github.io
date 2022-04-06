@@ -6,7 +6,7 @@
     "start": "vite --port $PORT",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --port $PORT"
   },
   "devDependencies": {
     "vite": "^2.9.0"
